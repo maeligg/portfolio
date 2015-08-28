@@ -8770,42 +8770,128 @@ button.close {
     display: none !important;
   }
 }
-/* line 1, ../sass/_custom.scss */
-.navbar-default {
-  background-color: transparent;
-  border-color: transparent;
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+/* line 7, ../sass/_scrolling-nav.scss */
+body {
+  width: 100%;
+  height: 100%;
 }
 
-/* line 5, ../sass/_custom.scss */
+/* line 12, ../sass/_scrolling-nav.scss */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+/* line 23, ../sass/_scrolling-nav.scss */
+.intro-section {
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+}
+
+/* line 29, ../sass/_scrolling-nav.scss */
+.projects-section {
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+  background: #eee;
+}
+
+/* line 36, ../sass/_scrolling-nav.scss */
+.skills-section {
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+  background: #fff;
+}
+
+/* line 43, ../sass/_scrolling-nav.scss */
+.contact-section {
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+  background: #eee;
+}
+
+/* line 1, ../sass/_custom.scss */
 .navbar-nav {
+  padding-top: 30px;
+  background-color: transparent;
+  border-color: transparent;
   float: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-
-/* line 12, ../sass/_custom.scss */
-.navbar-nav > li {
+/* line 10, ../sass/_custom.scss */
+.navbar-nav li {
   float: none;
+  font-size: 25px;
+}
+/* line 14, ../sass/_custom.scss */
+.navbar-nav li a {
+  color: white;
 }
 
-/* line 16, ../sass/_custom.scss */
+/* line 20, ../sass/_custom.scss */
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+/* line 25, ../sass/_custom.scss */
 .intro-section {
-  background-image: url("../img/apple-camera-desk-office-large.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/laptop.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
 }
 
-/* line 23, ../sass/_custom.scss */
+/* line 32, ../sass/_custom.scss */
 .txt-bg {
   background-color: white;
   border-radius: 50%;
   padding: 50px;
 }
 
-/* line 29, ../sass/_custom.scss */
+/* line 38, ../sass/_custom.scss */
 h1 {
   font-family: "Raleway";
   font-size: 80px;
+}
+
+/* line 43, ../sass/_custom.scss */
+.card {
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 48, ../sass/_custom.scss */
+.me {
+  float: left;
+  padding-bottom: 20px;
+  width: 150px;
+  height: auto;
+}
+
+/* line 55, ../sass/_custom.scss */
+.txt-intro {
+  padding-top: 50px;
+}
+
+/* line 59, ../sass/_custom.scss */
+.btn {
+  clear: both;
+  margin-top: 100px;
 }

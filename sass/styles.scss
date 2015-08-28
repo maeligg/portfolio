@@ -7,6 +7,10 @@
 // Import Bootstrap for Sass
 @import "bootstrap";
 
+@import "mixins";
+
+@import "scrolling-nav";
+
 // Import Custom
 @import "custom";
 
