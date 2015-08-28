@@ -1,5 +1,5 @@
 .navbar-nav {
-  padding-top: 30px;
+  padding-top: 50px;
   background-color: transparent;
   border-color: transparent;
   float: none;
@@ -43,6 +43,7 @@ h1 {
 .card {
   background: rgba(255, 255, 255, 0.7);
   @include border-radius(10px);
+  margin-top: 50px;
 }
 
 .me {
