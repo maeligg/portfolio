@@ -1,3 +1,6 @@
+$l : 18px;
+$xl: 30px;
+
 /*!
  * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -7,6 +10,7 @@
 body {
     width: 100%;
     height: 100%;
+    font-family: Lato, sans-serif;
 }
 
 html {
@@ -22,15 +26,23 @@ of those sections to manage the look and feel of the site. */
 
 .intro-section, .projects-section, .skills-section, .contact-section {
     min-height: 100%;
-    padding-top: 100px;
-    text-align: center;
-    h2 {
-      padding-bottom: 50px;
-    }
+    padding-top: 50px;
+    text-align: justify;
+}
+
+h1, h2, h3, a {
+  text-align: center;
+}
+
+h2 {
+  padding-bottom: 50px;
+  font-size: 50px;
+  color: white;
 }
 
 .navbar-nav {
   margin-top: 50px;
+  margin-bottom: 20px;
   background-color: transparent;
   border-color: transparent;
   float: none;
@@ -40,10 +52,11 @@ of those sections to manage the look and feel of the site. */
 
     li {
     float: none;
-    font-size: 25px;
+    font-size: $xl;
+    z-index: 100;
 
       a {
-        color: white;
+        color: black;
       }
   }
 }
@@ -54,34 +67,30 @@ of those sections to manage the look and feel of the site. */
 }
 
 .intro-section {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/laptop.jpeg');
+  background: url('../img/laptop.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size:100%;
+  font-size: $l;
 }
 
 h1 {
-  font-family: "Raleway";
   font-size: 80px;
-  padding: 15px 0px;
+  margin-bottom: 20px;
 }
 
 .card {
-  background: url('../img/card-white.jpg');;
-  margin-top: 50px;
+  background: url('../img/card-white.jpg');
+  min-height: 300px;
+  padding: 20px;
   @include box-shadow();
 }
 
 .me {
   float: left;
-  padding-bottom: 30px;
   padding-right: 15px;
   width: 150px;
   height: auto;
-}
-
-.txt-intro {
-  padding-top: 30px;
 }
 
 .btn {
@@ -91,11 +100,10 @@ h1 {
 }
 
 .links {
-  text-align: left;
-  padding-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
     a {
       margin: 0px 10px;
       color:black;
@@ -111,11 +119,9 @@ h1 {
   h3 {
     color: white;
   }
-  a {
-    text-decoration: none;
-  }
+
   a:hover > h3 {
-    color: $gray;
+    text-decoration: underline white;
   }
   p {
     padding-bottom: 20px;
@@ -128,16 +134,37 @@ h1 {
 }
 
 .skills-section {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/books.jpg');
+  position: relative;
+  font-size: $l;
+  h2 {
+    color: black;
+  }
+  img {
+    position: absolute;
+    width: 300px;
+    bottom: 0px;
+    right: 50px;
+  }
+  .page-down i {
+  color: black;
+}
+}
+
+.contact-section {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/computer-cat.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size:100%;
 }
 
-.container {
-  position: relative;
-}
-
 .row-bottom {
   min-height: 100px;
+}
+
+.page-down i {
+  color: white;
+}
+
+.frame {
+  background-color: rgba(255,255,255,0.7);
 }
