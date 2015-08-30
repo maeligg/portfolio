@@ -34,49 +34,53 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar">
 
-    <!-- Navigation -->
-    <nav class="navbar  col-md-4 col-md-offset-4" role="navigation">
-<!--        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
-            </div>
--->
-            <!-- Collect the nav links, forms, and other content for toggling -->
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top">ABOUT</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#projects">PROJECTS</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#skills">SKILLS</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">CONTACT</a>
-                    </li>
-                </ul>
-    </nav>
+<section id="intro" class="intro-section">
 
     <!-- Intro Section -->
-    <section id="intro" class="intro-section">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-sm-offset-3 card">
+                <div class="col-sm-6 col-sm-offset-3 col-xs-12 card">
                     <h1>Maël Brunet</h1>
                         <img src="img/mael.png" class="me">
-                        <p>Hello! My name is Maël Brunet, I'm a Brussels-based webmaster who's recently transitionned into front-end web development. I like building things.</p>
+                        <p>Hello! My name is Maël Brunet, I'm a Brussels-based front-end web developer with a background in webmastering. I like building things.</p>
+                            <!-- Navigation -->
+<div class="row">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header text-center">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="my-nav">
+      <ul class="nav navbar-nav nav-justified">
+        <li class="hidden">
+            <a class="page-scroll" href="#page-top">ABOUT</a>
+        </li>
+        <li>
+            <a class="page-scroll" href="#projects">PROJECTS</a>
+        </li>
+        <li>
+            <a class="page-scroll" href="#skills">SKILLS</a>
+        </li>
+        <li>
+            <a class="page-scroll" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
                 </div>
             </div>
             <div class="row row-bottom">
-                <a class="page-down page-scroll col-sm-2 col-sm-offset-5" href="#projects"><i class="fa fa-angle-down fa-5x"></i>
+                <a class="page-down page-scroll col-xs-2 col-xs-offset-5" href="#projects"><i class="fa fa-angle-down fa-5x"></i>
 </a>
             </div>
         </div>
@@ -90,28 +94,28 @@
                     <h2>Projects I've worked on</h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-6 col-xs-12 project">
                         <a href="http://www.openforumeurope.org/" target="_blank">
                             <h3>OpenForum Europe</h3>
                             <img src="img/OFE-site.png" class="img-portfolio">
                         </a>
                         <p>While working for OpenForum Europe (OFE), I completely redesigned and developed the new OFE site using a custom WordPress theme. I also organised the migration of content from the <a href="http://archive.openforumeurope.org/" target="_blank">old site</a> running on Plone.</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-6 col-xs-12 project">
                         <a href="http://cois.org.uk/" target="_blank">
                             <h3>COIS</h3>
                             <img src="img/COIS-site.png" class="img-portfolio">
                         </a>
                         <p>The Community for Open Interoperability Standards (COIS) is a UK-based industry organisation working to promote the use of Open Standards in all levels of government. I designed and built a simple landing page for them using Bootstrap.</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-6 col-xs-12 project">
                         <a href="http://indius.org/" target="_blank">
                             <h3>Indius</h3>
                             <img src="img/Indius-site.png" class="img-portfolio">
                         </a>
                         <p>Indius is the most popular French speaking news site devoted exclusively to indie video games. I developed their top interractive banner and helped to fix various display bugs on their WordPress site.</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-6 col-xs-12 project">
                         <a href="http://dsm.openforumeurope.org/" target="_blank">
                             <h3>Digital Single Market</h3>
                             <img src="img/DSM-site.png" class="img-portfolio">
@@ -120,7 +124,7 @@
                     </div>
                 </div>
                 <div class="row row-bottom">
-                    <a class="page-down page-scroll col-sm-2 col-sm-offset-5" href="#skills"><i class="fa fa-angle-down fa-5x"></i></a>
+                    <a class="page-down page-scroll col-xs-2 col-xs-offset-5" href="#skills"><i class="fa fa-angle-down fa-5x"></i></a>
                 </div>
             </div>
         </div>
@@ -135,18 +139,18 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-8 frame">
+                <div class="col-md-8 col-xs-12 frame">
                     <p>I am a self-taught developper, always eager to learn new tools and able to adapt rapidly to new trends and technologies. I have good design skills (Photoshop, Illustrator, ...) and experience creating wireframes and visual mock-ups for websites. Where I am at my strongest however is with front-end technologies (HTML5, CSS3, Javascript), including various frameworks such as JQuery or Bootstrap. I have some knowledge of back-end technologies (PHP, MySQL) and CMS such as WordPress. I also worked on deploying websites and through that acquired some knowledge of Linux server system administration. I am comfortable with modern workflows involving Git and Github.</p>
                     <p>I believe in the importance of nurturing our digital commons which is why I prefer to use Open Source tools whenever possible.</p>
                     <p><i class="fa fa-download"></i>  Download my <a href="uploads/CV_MB_en.pdf" target="_blank">full CV</a> for more information.</p>
                 </div>
             </div>
             <div class="row row-bottom">
-                <a class="page-down page-scroll col-sm-2 col-sm-offset-5" href="#contact"><i class="fa fa-angle-down fa-5x"></i>
+                <a class="page-down page-scroll col-xs-2 col-xs-offset-5" href="#contact"><i class="fa fa-angle-down fa-5x"></i>
 </a>
             </div>
         </div>
-        <img src="img/skills-juggle-2.png">
+        <img src="img/skills-juggle-2.png" id="juggle">
     </section>
 
     <!-- Contact Section -->
@@ -158,11 +162,11 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-sm-offset-3 card links">
-                        <a href="mailto:maelbrunet@gmail.com" target="_blank"><i class="fa fa-envelope fa-5x"></i></a>
-                        <a href ="https://www.linkedin.com/pub/ma%C3%ABl-brunet/18/761/b58" target="_blank"><i class="fa fa-linkedin fa-5x"></i></a>
-                        <a href ="https://twitter.com/maelb" target="_blank"><i class="fa fa-twitter fa-5x"></i></a>
-                        <a href ="https://github.com/maeligg" target="_blank"><i class="fa fa-github fa-5x"></i></a>
+                <div class="col-sm-6 col-sm-offset-3 col-xs-12 card links">
+                        <a href="mailto:maelbrunet@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                        <a href ="https://www.linkedin.com/pub/ma%C3%ABl-brunet/18/761/b58" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href ="https://twitter.com/maelb" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href ="https://github.com/maeligg" target="_blank"><i class="fa fa-github"></i></a>
                 </div>
             </div>
         </div>
