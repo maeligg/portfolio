@@ -8877,7 +8877,7 @@ h2 {
 
 /* line 86, ../sass/_custom.scss */
 .intro-section {
-  background: url("../img/laptop.jpeg");
+  background: url("../img/laptop.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
@@ -9014,23 +9014,29 @@ h1 {
 @media (max-width: 768px) {
   /* line 199, ../sass/_custom.scss */
   .intro-section, .contact-section {
+    min-height: 0%;
     background: #222222;
     padding-top: 0px;
   }
 
-  /* line 203, ../sass/_custom.scss */
+  /* line 204, ../sass/_custom.scss */
   body {
     font-size: 14px;
   }
 
-  /* line 206, ../sass/_custom.scss */
+  /* line 207, ../sass/_custom.scss */
   .card {
     margin-top: 0px;
     box-shadow: none;
   }
+
+  /* line 211, ../sass/_custom.scss */
+  .links {
+    font-size: 12vw;
+  }
 }
 @media (max-width: 991px) {
-  /* line 213, ../sass/_custom.scss */
+  /* line 217, ../sass/_custom.scss */
   #juggle {
     display: none;
   }

@@ -84,7 +84,7 @@ h2 {
 }
 
 .intro-section {
-  background: url('../img/laptop.jpeg');
+  background: url('../img/laptop.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size:100%;
@@ -197,6 +197,7 @@ h1 {
 
 @media (max-width: 768px) {
   .intro-section, .contact-section {
+    min-height: 0%;
     background: $gray-darker;
     padding-top: 0px;
   }
@@ -206,6 +207,9 @@ h1 {
   .card {
     margin-top: 0px;
     box-shadow: none;
+  }
+  .links {
+    font-size: 12vw;
   }
 }
 
