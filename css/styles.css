@@ -9026,10 +9026,11 @@ h1 {
   /* line 206, ../sass/_custom.scss */
   .card {
     margin-top: 0px;
+    box-shadow: none;
   }
 }
 @media (max-width: 991px) {
-  /* line 212, ../sass/_custom.scss */
+  /* line 213, ../sass/_custom.scss */
   #juggle {
     display: none;
   }
