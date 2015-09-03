@@ -8877,24 +8877,27 @@ h2 {
 
 /* line 86, ../sass/_custom.scss */
 .intro-section {
+  display: flex;
+  align-items: center;
+  position: relative;
   background: url("../img/laptop.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
   font-size: 18px;
 }
-/* line 92, ../sass/_custom.scss */
+/* line 95, ../sass/_custom.scss */
 .intro-section p {
   text-align: left;
   margin-top: 30px;
 }
 
-/* line 98, ../sass/_custom.scss */
+/* line 101, ../sass/_custom.scss */
 h1 {
   font-size: 4em;
 }
 
-/* line 102, ../sass/_custom.scss */
+/* line 105, ../sass/_custom.scss */
 .card {
   background: url("../img/card-white.jpg");
   min-height: 300px;
@@ -8905,7 +8908,7 @@ h1 {
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
-/* line 110, ../sass/_custom.scss */
+/* line 113, ../sass/_custom.scss */
 .me {
   float: left;
   padding-right: 15px;
@@ -8913,14 +8916,14 @@ h1 {
   height: auto;
 }
 
-/* line 117, ../sass/_custom.scss */
+/* line 120, ../sass/_custom.scss */
 .btn {
   position: absolute;
   bottom: 10px;
   display: block;
 }
 
-/* line 123, ../sass/_custom.scss */
+/* line 126, ../sass/_custom.scss */
 .links {
   font-size: 5vw;
   display: flex;
@@ -8928,67 +8931,67 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-/* line 129, ../sass/_custom.scss */
+/* line 132, ../sass/_custom.scss */
 .links a {
   margin: 0px 10px;
   color: black;
 }
-/* line 133, ../sass/_custom.scss */
+/* line 136, ../sass/_custom.scss */
 .links a:hover {
   color: #555555;
 }
 
-/* line 138, ../sass/_custom.scss */
+/* line 141, ../sass/_custom.scss */
 .projects-section {
   background-color: #222222;
   color: white;
   font-size: 14px;
 }
-/* line 142, ../sass/_custom.scss */
+/* line 145, ../sass/_custom.scss */
 .projects-section h3 {
   color: white;
 }
-/* line 146, ../sass/_custom.scss */
+/* line 149, ../sass/_custom.scss */
 .projects-section a:hover > h3 {
   text-decoration: underline white;
 }
-/* line 149, ../sass/_custom.scss */
+/* line 152, ../sass/_custom.scss */
 .projects-section p {
   padding-bottom: 20px;
 }
 
-/* line 154, ../sass/_custom.scss */
+/* line 157, ../sass/_custom.scss */
 .project {
   padding: 25px;
 }
 
-/* line 158, ../sass/_custom.scss */
+/* line 161, ../sass/_custom.scss */
 .img-portfolio {
   width: 100%;
   padding-bottom: 20px;
 }
 
-/* line 163, ../sass/_custom.scss */
+/* line 166, ../sass/_custom.scss */
 .skills-section {
   position: relative;
 }
-/* line 165, ../sass/_custom.scss */
+/* line 168, ../sass/_custom.scss */
 .skills-section h2 {
   color: black;
 }
-/* line 168, ../sass/_custom.scss */
+/* line 171, ../sass/_custom.scss */
 .skills-section img {
   position: absolute;
   width: 300px;
   bottom: 0px;
   right: 50px;
 }
-/* line 174, ../sass/_custom.scss */
+/* line 177, ../sass/_custom.scss */
 .skills-section .page-down i {
   color: black;
 }
 
-/* line 179, ../sass/_custom.scss */
+/* line 182, ../sass/_custom.scss */
 .contact-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/computer-cat.jpg");
   background-repeat: no-repeat;
@@ -8996,47 +8999,47 @@ h1 {
   background-size: 100%;
 }
 
-/* line 186, ../sass/_custom.scss */
+/* line 189, ../sass/_custom.scss */
 .row-bottom {
   min-height: 100px;
 }
 
-/* line 190, ../sass/_custom.scss */
+/* line 193, ../sass/_custom.scss */
 .page-down i {
   color: white;
 }
 
-/* line 194, ../sass/_custom.scss */
+/* line 197, ../sass/_custom.scss */
 .frame {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
 @media (max-width: 768px) {
-  /* line 199, ../sass/_custom.scss */
+  /* line 202, ../sass/_custom.scss */
   .intro-section, .contact-section {
     min-height: 0%;
     background: #222222;
     padding-top: 0px;
   }
 
-  /* line 204, ../sass/_custom.scss */
+  /* line 207, ../sass/_custom.scss */
   body {
     font-size: 14px;
   }
 
-  /* line 207, ../sass/_custom.scss */
+  /* line 210, ../sass/_custom.scss */
   .card {
     margin-top: 0px;
     box-shadow: none;
   }
 
-  /* line 211, ../sass/_custom.scss */
+  /* line 214, ../sass/_custom.scss */
   .links {
     font-size: 12vw;
   }
 }
 @media (max-width: 991px) {
-  /* line 217, ../sass/_custom.scss */
+  /* line 220, ../sass/_custom.scss */
   #juggle {
     display: none;
   }
