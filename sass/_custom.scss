@@ -1,5 +1,6 @@
 $l : 18px;
 $xl: 24px;
+$xxl: 36px;
 
 /*!
  * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
@@ -51,7 +52,7 @@ h2 {
   vertical-align: top;
     li {
     float: none;
-    font-size: $xl;
+    font-size: $xxl;
     z-index: 100;
   }
 }
@@ -84,6 +85,7 @@ h2 {
 }
 
 .intro-section {
+  font-family: 'Just Another Hand', cursive;
   display: flex;
   align-items: center;
   position: relative;
@@ -93,25 +95,28 @@ h2 {
   background-size:100%;
   font-size: 18px;
   p {
-    text-align: left;
-    margin-top: 30px;
+    font-family: Lato, sans-serif;
+    text-align: center;
+    margin-top: 10px;
   }
 }
 
 h1 {
   font-size: 4em;
+  margin-bottom: 0px;
 }
 
 .card {
   background: url('../img/card-white.jpg');
   min-height: 300px;
-  padding: 20px;
+  padding: 10px;
   margin-top: 50px;
   @include box-shadow();
 }
 
 .me {
-  float: left;
+  display: block;
+  margin: auto;
   padding-right: 15px;
   width: 150px;
   height: auto;

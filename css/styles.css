@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Just+Another+Hand);
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -8788,7 +8788,7 @@ button.close {
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-/* line 10, ../sass/_custom.scss */
+/* line 11, ../sass/_custom.scss */
 body {
   width: 100%;
   height: 100%;
@@ -8796,7 +8796,7 @@ body {
   font-size: 18px;
 }
 
-/* line 17, ../sass/_custom.scss */
+/* line 18, ../sass/_custom.scss */
 html {
   width: 100%;
   height: 100%;
@@ -8805,78 +8805,79 @@ html {
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
-/* line 28, ../sass/_custom.scss */
+/* line 29, ../sass/_custom.scss */
 .intro-section, .projects-section, .skills-section, .contact-section {
   min-height: 100%;
   padding-top: 50px;
   text-align: justify;
 }
 
-/* line 34, ../sass/_custom.scss */
+/* line 35, ../sass/_custom.scss */
 h1, h2, h3, a {
   text-align: center;
 }
 
-/* line 38, ../sass/_custom.scss */
+/* line 39, ../sass/_custom.scss */
 h2 {
   padding-bottom: 50px;
   font-size: 45px;
   color: white;
 }
 
-/* line 44, ../sass/_custom.scss */
+/* line 45, ../sass/_custom.scss */
 .navbar {
   margin-bottom: 0px;
 }
 
-/* line 48, ../sass/_custom.scss */
+/* line 49, ../sass/_custom.scss */
 .navbar-nav {
   display: inline-block;
   float: none;
   vertical-align: top;
 }
-/* line 52, ../sass/_custom.scss */
+/* line 53, ../sass/_custom.scss */
 .navbar-nav li {
   float: none;
-  font-size: 24px;
+  font-size: 36px;
   z-index: 100;
 }
 
-/* line 59, ../sass/_custom.scss */
+/* line 60, ../sass/_custom.scss */
 .navbar-collapse {
   text-align: center;
 }
 
-/* line 63, ../sass/_custom.scss */
+/* line 64, ../sass/_custom.scss */
 .navbar-default {
   background-color: transparent;
   border: none;
 }
 
-/* line 68, ../sass/_custom.scss */
+/* line 69, ../sass/_custom.scss */
 .navbar-toggle {
   clear: both;
   float: none;
   border: none;
 }
 
-/* line 74, ../sass/_custom.scss */
+/* line 75, ../sass/_custom.scss */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: black;
 }
 
-/* line 78, ../sass/_custom.scss */
+/* line 79, ../sass/_custom.scss */
 .navbar-default .navbar-nav > li > a {
   color: black;
 }
 
-/* line 82, ../sass/_custom.scss */
+/* line 83, ../sass/_custom.scss */
 .navbar-header {
   clear: both;
 }
 
-/* line 86, ../sass/_custom.scss */
+/* line 87, ../sass/_custom.scss */
 .intro-section {
+  font-family: 'Just Another Hand', cursive;
   display: flex;
   align-items: center;
   position: relative;
@@ -8886,44 +8887,47 @@ h2 {
   background-size: 100%;
   font-size: 18px;
 }
-/* line 95, ../sass/_custom.scss */
+/* line 97, ../sass/_custom.scss */
 .intro-section p {
-  text-align: left;
-  margin-top: 30px;
+  font-family: Lato, sans-serif;
+  text-align: center;
+  margin-top: 10px;
 }
 
-/* line 101, ../sass/_custom.scss */
+/* line 104, ../sass/_custom.scss */
 h1 {
   font-size: 4em;
+  margin-bottom: 0px;
 }
 
-/* line 105, ../sass/_custom.scss */
+/* line 109, ../sass/_custom.scss */
 .card {
   background: url("../img/card-white.jpg");
   min-height: 300px;
-  padding: 20px;
+  padding: 10px;
   margin-top: 50px;
   -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
-/* line 113, ../sass/_custom.scss */
+/* line 117, ../sass/_custom.scss */
 .me {
-  float: left;
+  display: block;
+  margin: auto;
   padding-right: 15px;
   width: 150px;
   height: auto;
 }
 
-/* line 120, ../sass/_custom.scss */
+/* line 125, ../sass/_custom.scss */
 .btn {
   position: absolute;
   bottom: 10px;
   display: block;
 }
 
-/* line 126, ../sass/_custom.scss */
+/* line 131, ../sass/_custom.scss */
 .links {
   font-size: 5vw;
   display: flex;
@@ -8931,67 +8935,67 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-/* line 132, ../sass/_custom.scss */
+/* line 137, ../sass/_custom.scss */
 .links a {
   margin: 0px 10px;
   color: black;
 }
-/* line 136, ../sass/_custom.scss */
+/* line 141, ../sass/_custom.scss */
 .links a:hover {
   color: #555555;
 }
 
-/* line 141, ../sass/_custom.scss */
+/* line 146, ../sass/_custom.scss */
 .projects-section {
   background-color: #222222;
   color: white;
   font-size: 14px;
 }
-/* line 145, ../sass/_custom.scss */
+/* line 150, ../sass/_custom.scss */
 .projects-section h3 {
   color: white;
 }
-/* line 149, ../sass/_custom.scss */
+/* line 154, ../sass/_custom.scss */
 .projects-section a:hover > h3 {
   text-decoration: underline white;
 }
-/* line 152, ../sass/_custom.scss */
+/* line 157, ../sass/_custom.scss */
 .projects-section p {
   padding-bottom: 20px;
 }
 
-/* line 157, ../sass/_custom.scss */
+/* line 162, ../sass/_custom.scss */
 .project {
   padding: 25px;
 }
 
-/* line 161, ../sass/_custom.scss */
+/* line 166, ../sass/_custom.scss */
 .img-portfolio {
   width: 100%;
   padding-bottom: 20px;
 }
 
-/* line 166, ../sass/_custom.scss */
+/* line 171, ../sass/_custom.scss */
 .skills-section {
   position: relative;
 }
-/* line 168, ../sass/_custom.scss */
+/* line 173, ../sass/_custom.scss */
 .skills-section h2 {
   color: black;
 }
-/* line 171, ../sass/_custom.scss */
+/* line 176, ../sass/_custom.scss */
 .skills-section img {
   position: absolute;
   width: 300px;
   bottom: 0px;
   right: 50px;
 }
-/* line 177, ../sass/_custom.scss */
+/* line 182, ../sass/_custom.scss */
 .skills-section .page-down i {
   color: black;
 }
 
-/* line 182, ../sass/_custom.scss */
+/* line 187, ../sass/_custom.scss */
 .contact-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/computer-cat.jpg");
   background-repeat: no-repeat;
@@ -8999,47 +9003,47 @@ h1 {
   background-size: 100%;
 }
 
-/* line 189, ../sass/_custom.scss */
+/* line 194, ../sass/_custom.scss */
 .row-bottom {
   min-height: 100px;
 }
 
-/* line 193, ../sass/_custom.scss */
+/* line 198, ../sass/_custom.scss */
 .page-down i {
   color: white;
 }
 
-/* line 197, ../sass/_custom.scss */
+/* line 202, ../sass/_custom.scss */
 .frame {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
 @media (max-width: 768px) {
-  /* line 202, ../sass/_custom.scss */
+  /* line 207, ../sass/_custom.scss */
   .intro-section, .contact-section {
     min-height: 0%;
     background: #222222;
     padding-top: 0px;
   }
 
-  /* line 207, ../sass/_custom.scss */
+  /* line 212, ../sass/_custom.scss */
   body {
     font-size: 14px;
   }
 
-  /* line 210, ../sass/_custom.scss */
+  /* line 215, ../sass/_custom.scss */
   .card {
     margin-top: 0px;
     box-shadow: none;
   }
 
-  /* line 214, ../sass/_custom.scss */
+  /* line 219, ../sass/_custom.scss */
   .links {
     font-size: 12vw;
   }
 }
 @media (max-width: 991px) {
-  /* line 220, ../sass/_custom.scss */
+  /* line 225, ../sass/_custom.scss */
   #juggle {
     display: none;
   }
