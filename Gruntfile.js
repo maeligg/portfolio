@@ -7,7 +7,6 @@ module.exports = function(grunt) {
         concat: {
             dist: {
                 src: [
-
                     'js/*.js'
                 ],
                 dest: 'js/prod/production.js',
@@ -30,9 +29,44 @@ module.exports = function(grunt) {
                     dest: 'img/prod/'
                 }]
             }
-        }
+        },
+
+        sass: {
+            dist: {
+                options: {
+                    style: 'compressed'
+                },
+                files: {
+                    'css/styles.css': 'sass/styles.scss'
+                }
+            }
+        },
 
 
+        watch: {
+
+                    scripts: {
+                        files: ['js/*.js'],
+                        tasks: ['concat', 'uglify'],
+                        options: {
+                            spawn: false,
+                        },
+                    },
+                    images: {
+                        files: ['img/dev/*.{png,jpg,gif}'],
+                        tasks: ['imagemin'],
+                        options: {
+                            spawn: false,
+                        },
+                    },
+                    css: {
+                        files: ['sass/*.scss'],
+                        tasks: ['sass'],
+                        options: {
+                            spawn: false,
+                        }
+                    }
+                }
 
     });
 
@@ -40,8 +74,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'uglify', 'imagemin']);
+    grunt.registerTask('default', ['concat', 'uglify', 'sass']);
 
 };

@@ -203,6 +203,14 @@ h1 {
   background-color: rgba(255,255,255,0.7);
 }
 
+.project-about {
+  display: none;
+}
+
+.btn-projects {
+  margin: auto;
+}
+
 @media (max-width: 768px) {
   .intro-section, .contact-section {
     min-height: 0%;
