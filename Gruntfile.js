@@ -7,16 +7,16 @@ module.exports = function(grunt) {
         concat: {
             dist: {
                 src: [
-                    'js/*.js'
+                    'js/dev/*.js'
                 ],
-                dest: 'js/prod/production.js',
+                dest: 'js/production.js',
             }
         },
 
         uglify: {
             build: {
-                src: 'js/prod/production.js',
-                dest: 'js/prod/production.min.js'
+                src: 'js/production.js',
+                dest: 'js/production.min.js'
             }
         },
 
@@ -24,9 +24,9 @@ module.exports = function(grunt) {
             dynamic: {
                 files: [{
                     expand: true,
-                    cwd: 'img/',
+                    cwd: 'img/dev/',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'img/prod/'
+                    dest: 'img/'
                 }]
             }
         },
@@ -78,6 +78,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'uglify', 'sass']);
+    grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'sass']);
 
 };

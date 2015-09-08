@@ -112,14 +112,14 @@ h1 {
   padding: 10px;
   margin-top: 50px;
   @include box-shadow();
+  overflow: hidden;
 }
 
 .me {
-  display: block;
-  margin: auto;
-  padding-right: 15px;
-  width: 150px;
-  height: auto;
+  position: absolute;
+  top: -25px;
+  left: -100px;
+  height:350px;
 }
 
 .btn {
