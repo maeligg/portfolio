@@ -2386,16 +2386,12 @@ d.trigger("activate.bs.scrollspy")},b.prototype.clear=function(){a(this.selector
 
 $(function(){
 
-  $('.btn-project').on ('click', (function(){
-    
-      $(this).parent().find('.project-about').slideToggle();
-    
-      if ($(this).html() == 'More') {
-      $(this).text('Less');
-      }
-      else {
-        $(this).text('More');
-      }
+  $('.more').on ('click', (function(event){
+
+      event.preventDefault();
+      $(this).next().slideToggle();
+
+      $("i",this).toggleClass("fa-plus fa-minus");
 
   }));
 

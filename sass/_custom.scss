@@ -96,7 +96,7 @@ h2 {
   font-size: 18px;
   p {
     font-family: Lato, sans-serif;
-    text-align: center;
+    text-align: justify;
     margin-top: 10px;
   }
 }
@@ -117,9 +117,9 @@ h1 {
 
 .me {
   position: absolute;
-  top: -25px;
-  left: -100px;
-  height:350px;
+  bottom: 0px;
+  left: -80px;
+  height:250px;
 }
 
 .btn {
@@ -227,10 +227,29 @@ h1 {
   .links {
     font-size: 12vw;
   }
+  .me {
+    display:none;
+  }
 }
 
 @media (max-width: 991px) {
   #juggle {
     display:none;
   }
+}
+
+.more {
+  bottom: 0px;
+  left: 50%;
+  margin-left: -20px;
+  background-color: #ffffff;
+  color: #222222;
+  padding: 5px 10px;
+  display: inline-block;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  -moz-box-shadow: 0px 0px 2px #888;
+  -webkit-box-shadow: 0px 0px 2px #888;
+  box-shadow: 0px 0px 2px #888;
 }
