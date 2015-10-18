@@ -2,9 +2,9 @@
 
 $(function(){
 
-  $('.more').on ('click', (function(event){
+  $('.more').on ('click', (function(e){
 
-      event.preventDefault();
+      e.preventDefault();
       $(this).next().slideToggle();
 
       $("i",this).toggleClass("fa-plus fa-minus");
